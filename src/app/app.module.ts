@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
-import { MultiplyPipe } from './multiply.pipe';
+import { SubstrPipe } from './substr.pipe';
 //Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,7 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
     AppComponent,
     ParentComponent,
     ChildComponent,
-    MultiplyPipe
+    SubstrPipe
   ],
   imports: [
     BrowserModule,
