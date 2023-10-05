@@ -1,0 +1,8 @@
+<p>parent works!</p>
+<div class="row">
+    <app-child [receivedMessageFromParent]="messageToChild" (sendMessageToParent)="receivedMessageFromchild($event)"></app-child>
+</div>
+<div class="row">
+    <h3>Received Message from the Child: {{msgReceivedFromChild | uppercase}}</h3>
+    <p custom>{{'rainbow children hospital marathahalli rainbow children hospital marathahalli rainbow children hospital marathahalli rainbow children hospital marathahalli' | substr }}</p>
+</div>
