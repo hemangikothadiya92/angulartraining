@@ -12,11 +12,18 @@ export class ParentComponent implements OnInit {
 
   constructor() { }
 
+  /**
+   * Angular life cycle hook
+   */
   ngOnInit(): void {
     this.messageToChild = "Hello Child!";
     console.log('paret: ', this.messageToChild);
   }
 
+  /**
+   * received message from the child component
+   * @param event 
+   */
   receivedMessageFromchild(event: any) {
     this.msgReceivedFromChild = event;
   }

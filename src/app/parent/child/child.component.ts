@@ -12,10 +12,17 @@ export class ChildComponent implements OnInit {
 
   constructor() { }
 
+  /**
+   * Angular life cycle hook
+   */
   ngOnInit() {
     console.log('Received Message from Parent: ', this.receivedMessageFromParent);
   }
 
+  /**
+   * onclick on button emit the message to parent component
+   *
+   */
   onclick() {
     this.sendMessageToParent.emit('Hello Parent!');
   }
