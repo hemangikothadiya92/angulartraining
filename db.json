@@ -6,6 +6,13 @@
       "author": "typicode"
     }
   ],
+  "logindata": [
+    {
+      "username": "Bret",
+      "password": "123",
+      "id": 1
+    }
+  ],
   "comments": [
     {
       "id": 1,
@@ -16,7 +23,6 @@
   "profile": {
     "name": "typicode"
   },
-
   "users": [
     {
       "id": 1,

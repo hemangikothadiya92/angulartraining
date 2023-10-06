@@ -1,1 +1,57 @@
-<p>user-details works!</p>
+<div class="container">
+    <div class="row">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <h2 class="header">User Form</h2>
+            </div>
+            <div class="row">
+                <mat-card-content>
+                        <div class="row">
+                            <div class="col">
+                                <mat-form-field appearance="outline">
+                                  <mat-label>Name</mat-label>
+                                  <input matInput formControlName="name">
+                                </mat-form-field>
+                                <div class="invalid-feedback">First name is required.</div>
+                            </div>
+                            <div class="col">
+                                <mat-form-field appearance="outline">
+                                  <mat-label>Email</mat-label>
+                                  <input matInput formControlName="email">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <mat-form-field appearance="outline">
+                                <mat-label>Phone</mat-label>
+                                <input matInput formControlName="phone">
+                              </mat-form-field>
+                            </div>
+                              <div class="col" style="width: 100px;"> 
+                              <mat-form-field appearance="outline">
+                                <mat-label>Website</mat-label>
+                                <input matInput formControlName="website">
+                              </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="padding: 10px;">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Company</mat-label>
+                                    <input matInput formControlName="company">
+                                  </mat-form-field>
+                            </div>
+                            <div class="col" style="padding: 10px;">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Zipcode</mat-label>
+                                    <input matInput formControlName="zipcode">
+                                  </mat-form-field>
+                            </div>
+                        </div>
+                    <button mat-raised-button color="primary">Submit</button>
+                </mat-card-content>
+            </div>
+        </form>
+    </div>
+</div>
